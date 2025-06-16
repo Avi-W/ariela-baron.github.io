@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRightIcon } from 'lucide-react';
+import cloveLogo from '../assets/images/Clove Digital Logo.png';
 const Home = () => {
   return <main className="flex-grow">
       {/* Hero Banner */}
@@ -60,8 +61,8 @@ const Home = () => {
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-sm">
-                <div className="w-12 h-12 bg-gray-100 rounded-full mb-4 flex items-center justify-center">
-                  <span className="font-bold text-sm">CD</span>
+                <div className="w-12 h-12 rounded-full mb-4 flex items-center justify-center overflow-hidden">
+                  <img src={cloveLogo} alt="Clove Digital Logo" className="w-full h-full object-contain" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">
                   Clove Digital — Reimbursement Tool
@@ -137,7 +138,7 @@ const Home = () => {
                 <p>
                   Most self-improvement apps shed users by Day 30. Research
                   showed the missing ingredient is small social accountability
-                  groups that don’t feel performative. Striveminds lets users
+                  groups that don't feel performative. Striveminds lets users
                   create squads of up to 8 peers, turning individual goals into
                   shared commitments.
                 </p>
