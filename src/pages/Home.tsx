@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRightIcon } from 'lucide-react';
 import cloveLogo from '../assets/images/Clove Digital Logo.png';
+import bnrLogo from '../assets/images/BNR Logo.png';
+import projectImage from '../assets/images/About this project Image.png';
+import groupChatImage from '../assets/images/Group Chat Prototype top.png';
 const Home = () => {
   return <main className="flex-grow">
       {/* Hero Banner */}
@@ -41,11 +44,11 @@ const Home = () => {
             </h2>
             <p className="text-lg">
               I build products that turn real user needs into measurable impact.
-              I’ve led an internal business-ops suite and a SaaS reimbursement
+              I've led an internal business-ops suite and a SaaS reimbursement
               platform—partnering daily with design and engineering and driven
               by insights from interviews and rapid prototypes. Highlights: I
               shipped an AI assistant that slashed claim time by 90 % and
-              redesigned onboarding to cut drop-off by 35 %. I’m eager to apply
+              redesigned onboarding to cut drop-off by 35 %. I'm eager to apply
               this research-driven rigor to B2B or consumer products next.
             </p>
           </div>
@@ -85,8 +88,8 @@ const Home = () => {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
-                <div className="w-12 h-12 bg-gray-100 rounded-full mb-4 flex items-center justify-center">
-                  <span className="font-bold text-sm">BNR</span>
+                <div className="w-12 h-12 rounded-full mb-4 flex items-center justify-center overflow-hidden">
+                  <img src={bnrLogo} alt="BNR Consulting Logo" className="w-full h-full object-contain" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">
                   BNR Consulting — Internal Biz-Ops Platform
@@ -143,8 +146,8 @@ const Home = () => {
                   shared commitments.
                 </p>
               </div>
-              <div className="bg-gray-100 rounded-lg h-64 flex items-center justify-center">
-                <p className="text-gray-500">Project Image Placeholder</p>
+              <div className="rounded-lg overflow-hidden">
+                <img src={projectImage} alt="Striveminds Project Overview" className="w-full h-full object-cover" />
               </div>
             </div>
             {/* Problem Flow - Removed top row arrows */}
@@ -273,12 +276,8 @@ const Home = () => {
                 <h4 className="text-sm font-medium mb-6 text-center">
                   Group Chat
                 </h4>
-                <div className="bg-gray-100 rounded-lg h-80 w-full flex items-center justify-center mb-6">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-56 h-96 border-4 border-gray-300 rounded-3xl bg-gray-200 flex items-center justify-center">
-                      <p className="text-gray-500">Phone Image Placeholder</p>
-                    </div>
-                  </div>
+                <div className="bg-gray-100 rounded-lg w-56 h-96 flex items-center justify-center">
+                  <img src={groupChatImage} alt="Group Chat Prototype" className="w-full h-full object-contain" />
                 </div>
                 <a href="https://www.magicpatterns.com/s/wDFZEJpT2ksnCs1yctyx22/p/ae3ebf8f-5e4f-40a3-8b94-cea5842e8414" target="_blank" rel="noopener noreferrer" className="text-xs text-[#1f4d4d] underline font-bold hover:opacity-80 text-center mt-8">
                   Play with interactive prototype (better on mobile)
@@ -381,7 +380,7 @@ const Home = () => {
                 Contact Me
               </h2>
               <p className="mb-6">
-                Let’s talk about building strategic products, that delight our
+                Let's talk about building strategic products, that delight our
                 users.
               </p>
               <a href="mailto:arielasweiner@gmail.com" className="inline-block bg-[#2C2C2C] text-white px-6 py-3 rounded-md font-medium hover:bg-opacity-90 transition-colors">
