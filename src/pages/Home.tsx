@@ -164,9 +164,14 @@ const Home = () => {
                 <img src={projectImage} alt="Striveminds Project Overview" className="w-full h-full object-cover" />
               </div>
             </div>
-            {/* Problem Flow - Removed top row arrows */}
             <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-10 mb-16 px-4 relative">
-              {/* First row - No arrows */}
+              {/* First row */}
+              {/* Arrow 1 (right) - First row */}
+              <div className="absolute left-[17%] top-[20%] w-[10%] hidden md:block">
+                <svg className="w-full" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 15 H90 M90 15 L75 5 M90 15 L75 25" stroke="#1a2a3d" strokeWidth="2" />
+                </svg>
+              </div>
               <div className="bg-gradient-to-br from-[#1a2a3d] via-[#1f4d4d] to-[#1a2a3d] p-6 rounded-lg relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent via-[#43c6a3] to-transparent opacity-20"></div>
                 <p className="text-sm text-white relative z-10 text-center">
@@ -175,34 +180,48 @@ const Home = () => {
                   discipline communities, we noticed a consistent pattern:
                 </p>
               </div>
+              {/* Arrow 2 (right) - First row */}
+              <div className="absolute left-[42%] top-[20%] w-[10%] hidden md:block">
+                <svg className="w-full" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 15 H90 M90 15 L75 5 M90 15 L75 25" stroke="#1a2a3d" strokeWidth="2" />
+                </svg>
+              </div>
               <div className="bg-gradient-to-br from-[#1a2a3d] via-[#1f4d4d] to-[#1a2a3d] p-6 rounded-lg relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent via-[#43c6a3] to-transparent opacity-20"></div>
-                <p className="text-sm text-white relative z-10 text-center">
+                <p className="text-sm text-white relative z-5 text-center">
                   Most people set personal goals—but{' '}
                   <span className="font-semibold">
                     very few follow through.
                   </span>
                 </p>
               </div>
+              {/* Arrow 3 (right) - First row */}
+              <div className="absolute left-[67%] top-[20%] w-[10%] hidden md:block">
+                <svg className="w-full" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 15 H90 M90 15 L75 5 M90 15 L75 25" stroke="#1a2a3d" strokeWidth="2" />
+                </svg>
+              </div>              
               <div className="bg-gradient-to-br from-[#1a2a3d] via-[#1f4d4d] to-[#1a2a3d] p-6 rounded-lg relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent via-[#43c6a3] to-transparent opacity-20"></div>
-                <p className="text-sm text-white relative z-10 text-center">
+                <p className="text-sm text-white relative z-5 text-center">
                   Members kept asking:{' '}
                   <span className="font-semibold">
                     "Are there any tools that actually help with consistency?"
                   </span>
                 </p>
               </div>
+              {/* Arrow 4 (down) - from last box in top row */}
+              <div className="absolute left-[86%] top-[27%] h-[25%] hidden md:block">
+                <svg className="h-full" width="30" viewBox="0 0 30 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 0 V75 M15 75 L5 60 M15 75 L25 60" stroke="#1a2a3d" strokeWidth="2" />
+                </svg>
+              </div>
               <div className="bg-gradient-to-br from-[#1a2a3d] via-[#1f4d4d] to-[#1a2a3d] p-6 rounded-lg relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent via-[#43c6a3] to-transparent opacity-20"></div>
-                <p className="text-sm text-white relative z-10 text-center">
+                <p className="text-sm text-white relative z-5 text-center">
                   Despite the shared struggle, no one could recommend a tool
                   that sustained follow through.
                 </p>
-              </div>
-              {/* Updated Arrow 4 (down) with arrow head - keeping vertical arrow */}
-              <div className="absolute right-[12%] top-[20%] h-[25%] hidden md:block">
-                <svg className="h-full" width="30" viewBox="0 0 30 100" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
               </div>
               {/* Second row - Keeping existing arrows and content unchanged */}
               <div className="bg-gradient-to-br from-[#1a2a3d] via-[#1f4d4d] to-[#1a2a3d] p-6 rounded-lg relative overflow-hidden">
@@ -213,7 +232,7 @@ const Home = () => {
                 </p>
               </div>
               {/* Arrow 5 (left) - Keeping unchanged */}
-              <div className="absolute left-[23%] top-[60%] w-[10%] hidden md:block transform rotate-180">
+              <div className="absolute left-[23%] top-[75%] w-[10%] hidden md:block transform rotate-180">
                 <svg className="w-full" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 15 H90 M90 15 L75 5 M90 15 L75 25" stroke="#1a2a3d" strokeWidth="2" />
                 </svg>
@@ -239,7 +258,7 @@ const Home = () => {
                 </p>
               </div>
               {/* Arrow 6 (left) - Keeping unchanged */}
-              <div className="absolute left-[48%] top-[60%] w-[10%] hidden md:block transform rotate-180">
+              <div className="absolute left-[48%] top-[75%] w-[10%] hidden md:block transform rotate-180">
                 <svg className="w-full" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 15 H90 M90 15 L75 5 M90 15 L75 25" stroke="#1a2a3d" strokeWidth="2" />
                 </svg>
@@ -256,7 +275,7 @@ const Home = () => {
                 </p>
               </div>
               {/* Arrow 7 (left) - Keeping unchanged */}
-              <div className="absolute left-[73%] top-[60%] w-[10%] hidden md:block transform rotate-180">
+              <div className="absolute left-[73%] top-[75%] w-[10%] hidden md:block transform rotate-180">
                 <svg className="w-full" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 15 H90 M90 15 L75 5 M90 15 L75 25" stroke="#1a2a3d" strokeWidth="2" />
                 </svg>
