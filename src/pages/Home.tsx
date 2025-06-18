@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRightIcon } from 'lucide-react';
 import cloveLogo from '../assets/images/Clove Digital Logo.png';
 import bnrLogo from '../assets/images/BNR Logo.png';
@@ -9,6 +9,17 @@ import findASquadImage from '../assets/images/Find a Squad Prototype Mid.png';
 import taskListImage from '../assets/images/Task List Prototype Bottom.png';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleDeepDiveClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate('/deep-dive');
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return <main className="flex-grow">
       {/* Hero Banner */}
       <section id="home" className="bg-gradient-to-br from-[#1a2a3d] via-[#1f4d4d] to-[#1a2a3d] w-full py-16 md:py-24 relative overflow-hidden">
@@ -348,9 +359,9 @@ const Home = () => {
             <p className="text-lg mb-6 text-white">
               Explore the research, strategies and KPIs that back this MVP
             </p>
-            <Link to="/deep-dive" className="inline-block bg-transparent border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-[#1a2a3d] transition-colors">
+            <button onClick={handleDeepDiveClick} className="inline-block bg-transparent border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-[#1a2a3d] transition-colors">
               Dive Deeper
-            </Link>
+            </button>
           </div>
         </div>
       </section>
