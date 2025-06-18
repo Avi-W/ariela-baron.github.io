@@ -5,6 +5,9 @@ import cloveLogo from '../assets/images/Clove Digital Logo.png';
 import bnrLogo from '../assets/images/BNR Logo.png';
 import projectImage from '../assets/images/About this project Image.png';
 import groupChatImage from '../assets/images/Group Chat Prototype top.png';
+import findASquadImage from '../assets/images/Find a Squad Prototype Mid.png';
+import taskListImage from '../assets/images/Task List Prototype Bottom.png';
+
 const Home = () => {
   return <main className="flex-grow">
       {/* Hero Banner */}
@@ -290,12 +293,8 @@ const Home = () => {
                 <h4 className="text-sm font-medium mb-6 text-center">
                   Find a Squad
                 </h4>
-                <div className="bg-gray-100 rounded-lg h-80 w-full flex items-center justify-center mb-6">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-56 h-96 border-4 border-gray-300 rounded-3xl bg-gray-200 flex items-center justify-center">
-                      <p className="text-gray-500">Phone Image Placeholder</p>
-                    </div>
-                  </div>
+                <div className="bg-gray-100 rounded-lg w-56 h-96 flex items-center justify-center">
+                  <img src={findASquadImage} alt="Group Chat Prototype" className="w-full h-full object-contain" />
                 </div>
                 <a href="https://www.magicpatterns.com/s/wDFZEJpT2ksnCs1yctyx22/p/c9fd7390-1cb3-4000-ab6e-001f25f0ce11" target="_blank" rel="noopener noreferrer" className="text-xs text-[#1f4d4d] underline font-bold hover:opacity-80 text-center mt-8">
                   Play with interactive prototype (better on mobile)
@@ -330,12 +329,8 @@ const Home = () => {
                 <h4 className="text-sm font-medium mb-6 text-center">
                   Task List
                 </h4>
-                <div className="bg-gray-100 rounded-lg h-80 w-full flex items-center justify-center mb-6">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-56 h-96 border-4 border-gray-300 rounded-3xl bg-gray-200 flex items-center justify-center">
-                      <p className="text-gray-500">Phone Image Placeholder</p>
-                    </div>
-                  </div>
+                <div className="bg-gray-100 rounded-lg w-56 h-96 flex items-center justify-center">
+                  <img src={taskListImage} alt="Group Chat Prototype" className="w-full h-full object-contain" />
                 </div>
                 <a href="https://www.magicpatterns.com/s/wDFZEJpT2ksnCs1yctyx22/p/704e7c4d-25a1-4bb6-bf17-2594571e9937" target="_blank" rel="noopener noreferrer" className="text-xs text-[#1f4d4d] underline font-bold hover:opacity-80 text-center mt-8">
                   Play with interactive prototype (better on mobile)
